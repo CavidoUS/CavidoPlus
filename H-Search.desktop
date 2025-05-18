@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=H-Search
+Exec=/usr/bin/chromium --profile-directory=Default --app-id=ajfcoflkljhgobkmeoocnghigppbckol
+Icon=chrome-ajfcoflkljhgobkmeoocnghigppbckol-Default
+StartupWMClass=crx_ajfcoflkljhgobkmeoocnghigppbckol

@@ -1,0 +1,155 @@
+body{
+    background: linear-gradient(to right, #ffde59, #ff5733);
+
+    font-family: 'Roboto', sans-serif;
+}
+.mytabs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label{
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+.mytabs .tab{
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2{
+    font-size: 3em;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab{
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+#calculator{
+    font-family: Arial, sans-sarif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 25px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 45%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator{
+    background-color: rgba(255, 166, 0, 0.767);
+}
+.operator:hover{
+    background-color: rgba(255, 166, 0, 0.911);
+}
+.operator:active{
+    background-color: rgb(255, 166, 0);
+}
+.darkmode{
+    background: linear-gradient(to left,purple, rgb(255, 0, 255));
+}
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-varieant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#theme-switch{
+    fill: var(--primary-color);
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: block;
+}
+
+.B{
+background-color: #47a386;
+border: 0;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+color: #fff;
+font-size: 14px;
+padding: 10px 25px;
+height:50px;
+width: 150px;
+}
+
+.B:hover{
+    background-color: #55d4ac;
+}
+
+.B:active{
+    background-color: #5dfac8;
+}
+
+a{
+    color: white;
+}
+.A{
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+    height:70px;
+    width: 150px;
+}
+
+.A:hover{
+    background-color: #55d4ac;
+}
+
+.A:active{
+    background-color: #5dfac8;
+}
